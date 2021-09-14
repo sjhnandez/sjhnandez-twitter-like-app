@@ -1,0 +1,40 @@
+.dash-nav {
+  width: 275px;
+  align-self: flex-start;
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  padding-top: 80px;
+  * {
+    color: white;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  .button-container {
+    button {
+      background-color: transparent;
+      display: flex;
+      transition: 0.2s;
+      border-radius: 50px;
+      padding: 10px;
+      padding-right: 20px;
+      margin: 10px 0;
+      .nav-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+      &:hover {
+        background-color: rgba($color: #1da1f2, $alpha: 0.2);
+        * {
+          color: #1da1f2 !important;
+        }
+      }
+    }
+  }
+}

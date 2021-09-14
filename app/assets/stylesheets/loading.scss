@@ -1,0 +1,11 @@
+.loading-screen-container {
+  background-color: #15202b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  .logo {
+    width: 100px;
+  }
+}

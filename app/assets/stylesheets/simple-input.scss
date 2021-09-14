@@ -1,0 +1,24 @@
+.simple-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3c4144;
+  background-color: inherit;
+  height: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 500px;
+  font-weight: 500;
+  input {
+    font-family: inherit;
+    font-size: 16px;
+    border-width: 0px;
+    border: none;
+    background-color: unset;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+  }
+}

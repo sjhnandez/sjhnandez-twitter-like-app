@@ -1,0 +1,72 @@
+.card-user {
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #253341;
+  padding-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #253341;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .tweet-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tweet-avatar {
+    display: flex;
+    height: 50px;
+    width: 60px;
+  }
+
+  .content-footer {
+    display: flex;
+    width: 50%;
+    margin-left: 10px;
+    flex-direction: column;
+  }
+
+  #tweet-name {
+    font-weight: bold;
+  }
+}
+
+#chip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  color: white;
+  margin: 10px;
+  background-color: #253341;
+  img {
+    height: 40px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+.MuiChip-outlined .MuiChip-deleteIcon {
+  margin-left: auto;
+}
+
+.btn-new {
+  margin-left: 10px;
+}
+.img-zone-2 {
+  margin-left: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}

@@ -1,0 +1,2 @@
+class ConfirmationCode < ApplicationRecord
+end

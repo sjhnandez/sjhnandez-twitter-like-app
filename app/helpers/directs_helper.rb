@@ -1,0 +1,2 @@
+module DirectsHelper
+end

@@ -1,0 +1,117 @@
+$gray-font: #8899a6;
+
+.messages-main-container {
+  color: white;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  .tweet-retweet {
+    margin-bottom: 10px;
+    .tweet-box {
+      padding-top: 10px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #38444d;
+    }
+  }
+
+  .tweet-body {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 10px 15px 0 15px;
+    flex: 1;
+  }
+
+  .tweet-header {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+    button {
+      margin-left: auto;
+    }
+  }
+
+  .content-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .tweet-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  #tweet-name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    flex-wrap: nowrap;
+  }
+
+  #tweet-name:hover {
+    text-decoration: underline;
+  }
+
+  #tweet-username {
+    font-weight: normal;
+    color: #8899a6;
+    font-size: 15px;
+    margin-right: 5px;
+    background-color: transparent;
+  }
+
+  .tweet-text {
+    text-align: start;
+    background-color: transparent;
+    display: flex;
+    p {
+      max-width: 100%;
+      flex-wrap: wrap;
+      word-wrap: break-word;
+      margin: 0;
+    }
+    a {
+      font-size: 16px;
+      color: #1da1f2;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .tweet-img {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      max-height: 250px;
+      max-width: 300px;
+      border-radius: 20px;
+    }
+  }
+}

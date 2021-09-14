@@ -1,0 +1,29 @@
+{
+  "name": "Twitter_Like_App",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "axios": "^0.20.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "bootstrap": "^4.5.2",
+    "moment": "^2.28.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "react": "^16.13.1",
+    "react-circular-progressbar": "^2.0.3",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-textarea-autosize": "^8.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}

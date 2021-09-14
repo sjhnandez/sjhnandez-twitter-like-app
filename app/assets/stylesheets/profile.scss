@@ -1,0 +1,127 @@
+.profile-main-container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #15202b;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  .banner {
+    height: 200px;
+    background-color: wheat !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .info {
+    padding: 10px 15px;
+    .button-image-container {
+      height: 50px;
+      display: flex;
+      position: relative;
+      .image {
+        height: 135px;
+        width: 135px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 100px;
+        border: 4px solid #15202b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      button {
+        margin-left: auto;
+        font-size: 15px;
+        width: 110px;
+      }
+    }
+    div {
+      color: #8899a6;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .personal-info {
+      display: flex;
+      span {
+        margin-right: 10px;
+      }
+      .icon-text {
+        display: flex;
+        svg {
+          font-size: 18px;
+          margin-top: 3px;
+          margin-right: 5px;
+        }
+        a {
+          color: #1da1f2;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .MuiTab-root {
+    transition: 0.2s;
+    .MuiTab-wrapper {
+      color: #8899a6;
+    }
+    &:hover {
+      background-color: rgba($color: #1da1f2, $alpha: 0.2);
+      .MuiTab-wrapper {
+        color: #1da1f2;
+      }
+    }
+    &.Mui-selected {
+      @extend .MuiTab-root;
+      .MuiTab-wrapper {
+        color: #1da1f2;
+      }
+    }
+  }
+  .MuiTabs-indicator {
+    background-color: #1da1f2;
+  }
+  .tweet-container {
+    height: 100%;
+  }
+
+  .follow {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #8899a6;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .follow-number {
+      font-weight: 700;
+      color: white;
+    }
+  }
+  .follow-box {
+    display: flex;
+    flex-direction: row;
+  }
+}

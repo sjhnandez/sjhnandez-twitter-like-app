@@ -1,0 +1,134 @@
+.dashboard-main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15202b;
+  height: 100vh;
+  .center-panel {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header-container {
+      padding: 15px;
+      display: flex;
+      h2 {
+        font-size: 20px;
+      }
+      button {
+        margin-right: 30px;
+      }
+    }
+
+    #msg-icon {
+      margin-right: 0px;
+    }
+    .new-messageIcon {
+      width: 40px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      border-radius: 50%;
+      margin-left: auto;
+      img {
+        height: 25px;
+        width: 25px;
+      }
+
+      &:hover {
+        background-color: rgba(29, 161, 242, 0.2);
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard-right-column {
+    width: 350px;
+    align-self: flex-start;
+    padding: 5px 30px;
+  }
+  .search-wrapper {
+    width: 100%;
+    background-color: #253341;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    &-header {
+      @extend .search-wrapper;
+      padding: 5px 10px;
+    }
+    button {
+      visibility: hidden;
+    }
+    svg {
+      color: #8899a6;
+      margin-right: 10px;
+    }
+    input {
+      background-color: inherit;
+      font-family: inherit;
+      font-size: 16px;
+      border-width: 0px;
+      border: none;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #8899a6;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #8899a6;
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #8899a6;
+      }
+    }
+    &:focus-within {
+      background-color: inherit;
+      border-color: #25a0ec;
+      svg {
+        color: #25a0ec;
+      }
+      input {
+        caret-color: white;
+      }
+    }
+  }
+  .MuiTab-root {
+    transition: 0.2s;
+    .MuiTab-wrapper {
+      color: #8899a6;
+    }
+    &:hover {
+      background-color: rgba($color: #1da1f2, $alpha: 0.2);
+      .MuiTab-wrapper {
+        color: #1da1f2;
+      }
+    }
+    &.Mui-selected {
+      @extend .MuiTab-root;
+      .MuiTab-wrapper {
+        color: #1da1f2;
+      }
+    }
+  }
+}

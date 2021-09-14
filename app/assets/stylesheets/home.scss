@@ -1,0 +1,81 @@
+$mid-cont-width: 45ch;
+
+.homepage-main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #15202b;
+  form {
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    left: calc(50% - #{$mid-cont-width}/ 2);
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    .labeled-input {
+      margin-right: 15px;
+      margin-bottom: 15px;
+      width: 210px;
+    }
+    button {
+      width: 10ch;
+      margin-top: 9px;
+    }
+  }
+
+  .password-container {
+    span {
+      color: #1da1f2;
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
+
+  .password-container .labeled-input {
+    margin-bottom: 5px;
+  }
+
+  .mid-container {
+    width: $mid-cont-width;
+    h1,
+    h4 {
+      color: white;
+    }
+    div {
+      margin-top: 50px;
+      * {
+        margin-top: 15px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+    .logo {
+      width: 45px;
+    }
+  }
+
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    color: #8899a6;
+    display: flex;
+    font-size: 13px;
+    * {
+      margin-right: 15px;
+    }
+    *:last-child {
+      margin-right: none;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.labeled-input {
+  display: flex;
+  flex-direction: column;
+  .subtext-container {
+    display: flex;
+    .chlimit {
+      margin: 2px 8px 0 0;
+      color: #8899a6;
+      font-size: 16px;
+      margin-left: auto;
+    }
+    .helper-text {
+      color: #e0245e;
+      font-size: 16px;
+      padding-left: 10px;
+      padding-top: 5px;
+      margin-right: auto;
+    }
+  }
+
+  .labeled-input-content {
+    display: flex;
+    flex-direction: column;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #8899a6;
+    background-color: #192734;
+    height: fit-content;
+    min-height: 48px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    position: relative;
+    &:focus-within {
+      border-bottom-color: #1da1f2;
+      label {
+        color: #1da1f2;
+      }
+    }
+    input {
+      font-family: inherit;
+      font-size: 18px;
+      margin-top: auto;
+      border-width: 0px;
+      border: none;
+      background-color: unset;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    select {
+      font-family: inherit;
+      font-size: 18px;
+      margin-top: auto;
+      border-width: 0px;
+      border: none;
+      background-color: #192734;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    label {
+      font-size: 15px;
+      color: #8899a6;
+      position: absolute;
+    }
+  }
+  .invalid-input,
+  .invalid-input:focus-within {
+    border-bottom-color: #e0245e;
+    label {
+      color: #e0245e;
+    }
+  }
+}

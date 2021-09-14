@@ -1,0 +1,119 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+
+/* Remove input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button- {
+  height: 5ch;
+  border: none;
+  border-color: #1da1f2;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+  &outlined {
+    @extend .button-;
+    background-color: transparent;
+    color: #1da1f2;
+    &:hover {
+      background-color: rgba($color: #1da1f2, $alpha: 0.1);
+    }
+    &:active {
+      background-color: rgba($color: #1da1f2, $alpha: 0.2);
+    }
+  }
+  &filled {
+    @extend .button-;
+    background-color: #1da1f2;
+    color: white;
+    &:hover {
+      background-color: rgba($color: #1da1f2, $alpha: 0.9);
+    }
+    &:active {
+      background-color: rgba($color: #1da1f2, $alpha: 0.8);
+    }
+    &:disabled {
+      background-color: #1da1f2;
+      filter: brightness(50%);
+      &:hover {
+        cursor: unset;
+      }
+    }
+  }
+}
+
+.nostyle-button {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #1da1f2;
+  margin: 0;
+  padding: 0;
+  &-icon {
+    @extend .nostyle-button;
+    &:hover {
+      color: rgba($color: #1da1f2, $alpha: 0.9);
+    }
+    &:active {
+      color: rgba($color: #1da1f2, $alpha: 0.8);
+    }
+  }
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 118, 125, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border {
+  &-bottom {
+    @extend .border;
+    border-bottom: 1px solid #38444d !important;
+  }
+  &-left {
+    @extend .border;
+    border-left: 1px solid #38444d !important;
+  }
+  &-right {
+    @extend .border;
+    border-right: 1px solid #38444d !important;
+  }
+  &-top {
+    @extend .border;
+    border-top: 1px solid #38444d !important;
+  }
+}
